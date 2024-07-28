@@ -81,16 +81,27 @@ const Navbar = () => {
             </div>
             {/* Your sidenav content here */}
             <div className="px-4 text-black dark:text-gray-50 flex flex-col">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  href={link.href}
-                  key={link.key}
-                  className="relative py-2 border-b"
-                >
-                  {link.label}
+              <div className="flex flex-col">
+                <Link href="/" className="relative py-2 border-b">
+                  Home
                 </Link>
-              ))}
-              <Link href="/login" className="text-black font-bold p-1 text-left">
+                <Link href="/howitwork" className="relative py-2 border-b">
+                  How Hilink Work?
+                </Link>
+                <a href="/#services" className="relative py-2 border-b">
+                  Services
+                </a>
+                <Link href="/pricing" className="relative py-2 border-b">
+                  Pricing
+                </Link>
+                <a href="/#contact" className="relative py-2 border-b">
+                  Contact Us
+                </a>
+              </div>
+              <Link
+                href="/login"
+                className="text-black font-bold p-1 text-left"
+              >
                 Login
               </Link>
             </div>
@@ -102,3 +113,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+/*className="relative py-2 border-b" */
