@@ -8,18 +8,12 @@ First, run the development server:
 
 clone the repo 
 ```bash
-github.com
-
+https://github.com/Ajor-Saha/Travel-Frontend-App.git
 ```
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
